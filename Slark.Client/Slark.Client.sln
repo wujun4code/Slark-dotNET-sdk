@@ -1,0 +1,38 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unity", "Unity", "{5D51D304-FD1E-45CB-ACE5-306CA1F1CC34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity", "Unity\Unity.csproj", "{3F4B9B45-4C74-4652-B946-846C1B674BF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCore", "NetCore", "{09875250-8201-444A-8E61-8BDFE7705D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheMessage", "TheMessage\TheMessage.csproj", "{B087BC28-A1A3-4906-94E1-DC26A5686259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{34206523-5BA8-4C0B-9506-DE3DDF835E8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F4B9B45-4C74-4652-B946-846C1B674BF3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3F4B9B45-4C74-4652-B946-846C1B674BF3}.Debug|x86.Build.0 = Debug|Any CPU
+		{3F4B9B45-4C74-4652-B946-846C1B674BF3}.Release|x86.ActiveCfg = Release|Any CPU
+		{3F4B9B45-4C74-4652-B946-846C1B674BF3}.Release|x86.Build.0 = Release|Any CPU
+		{B087BC28-A1A3-4906-94E1-DC26A5686259}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B087BC28-A1A3-4906-94E1-DC26A5686259}.Debug|x86.Build.0 = Debug|Any CPU
+		{B087BC28-A1A3-4906-94E1-DC26A5686259}.Release|x86.ActiveCfg = Release|Any CPU
+		{B087BC28-A1A3-4906-94E1-DC26A5686259}.Release|x86.Build.0 = Release|Any CPU
+		{34206523-5BA8-4C0B-9506-DE3DDF835E8E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34206523-5BA8-4C0B-9506-DE3DDF835E8E}.Debug|x86.Build.0 = Debug|Any CPU
+		{34206523-5BA8-4C0B-9506-DE3DDF835E8E}.Release|x86.ActiveCfg = Release|Any CPU
+		{34206523-5BA8-4C0B-9506-DE3DDF835E8E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F4B9B45-4C74-4652-B946-846C1B674BF3} = {5D51D304-FD1E-45CB-ACE5-306CA1F1CC34}
+		{B087BC28-A1A3-4906-94E1-DC26A5686259} = {09875250-8201-444A-8E61-8BDFE7705D37}
+		{34206523-5BA8-4C0B-9506-DE3DDF835E8E} = {09875250-8201-444A-8E61-8BDFE7705D37}
+	EndGlobalSection
+EndGlobal
