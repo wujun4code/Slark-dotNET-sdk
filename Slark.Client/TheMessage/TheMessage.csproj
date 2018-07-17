@@ -5,4 +5,8 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="LeanCloud.Play" Version="2018.7.17.1" />
+  </ItemGroup>
+
 </Project>

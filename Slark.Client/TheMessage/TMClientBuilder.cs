@@ -13,9 +13,9 @@ namespace TheMessage
             };
         }
 
-        public static Task<TMClient> UseLobby(this TMClient client, string lobbyWebSocketUrl)
+        public static TMClient UseLobby(this TMClient client, string lobbyWebSocketUrl)
         {
-            return client.ConnnectLobbyAsync(lobbyWebSocketUrl);
+            return client.ConnnectLobby(lobbyWebSocketUrl);
         }
     }
 }

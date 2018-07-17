@@ -2,23 +2,33 @@
 using System.Net.WebSockets;
 using System.Threading;
 using System.Threading.Tasks;
+using LeanCloud;
 
 namespace TheMessage
 {
-    public class TMClient
+    public class TMClient : PlayMonoBehaviour
     {
         public TMClient()
         {
-
+            AVClient.Initialize("315XFAYyIGPbd98vHPCBnLre-9Nh9j0Va", "Y04sM6TzhMSBmCMkwfI3FpHc");
         }
         ClientWebSocket websocketClient;
         public string NickName { get; set; }
 
-        public async Task<TMClient> ConnnectLobbyAsync(string lobbyWebSocketUrl)
+        public TMClient ConnnectLobby(string lobbyWebSocketUrl)
         {
-            if (websocketClient == null) websocketClient = new ClientWebSocket();
-            await websocketClient.ConnectAsync(new Uri(lobbyWebSocketUrl), CancellationToken.None);
+            Play.ToggleLog(true);
+            Play.UserID = NickName;
+            Play.SetRouteServer(lobbyWebSocketUrl);
+            Play.Connect("0.0.1");
+
             return this;
+        }
+
+        [PlayEvent]
+        public override void OnAuthenticated()
+        {
+            Play.Log("OnAuthenticated");
         }
     }
 }
