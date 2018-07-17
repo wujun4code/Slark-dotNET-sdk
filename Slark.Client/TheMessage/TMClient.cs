@@ -18,6 +18,10 @@ namespace TheMessage
         public TMClient ConnnectLobby(string lobbyWebSocketUrl)
         {
             Play.ToggleLog(true);
+            Play.Logger = (message) => 
+            {
+                Console.WriteLine(message);
+            };
             Play.UserID = NickName;
             Play.SetRouteServer(lobbyWebSocketUrl);
             Play.Connect("0.0.1");

@@ -14,10 +14,8 @@ namespace ConsoleApp
             {
                 builder.AddConsole();
             });
-            var client = new TMClient()
-            {
-                NickName = "wujun"
-            }.ConnnectLobby("http://localhost:3000/play/");
+
+            TMClientBuilder.CreateDefault("wujun").UseLobby("http://localhost:3000/play/");
 
             await hostBuilder.RunConsoleAsync();
 
