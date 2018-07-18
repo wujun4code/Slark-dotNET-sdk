@@ -12,16 +12,13 @@ namespace TheMessage
         {
             AVClient.Initialize("315XFAYyIGPbd98vHPCBnLre-9Nh9j0Va", "Y04sM6TzhMSBmCMkwfI3FpHc");
         }
-        ClientWebSocket websocketClient;
+
         public string NickName { get; set; }
 
         public TMClient ConnnectLobby(string lobbyWebSocketUrl)
         {
             Play.ToggleLog(true);
-            Play.Logger = (message) => 
-            {
-                Console.WriteLine(message);
-            };
+            Play.Logger = Console.WriteLine;
             Play.UserID = NickName;
             Play.SetRouteServer(lobbyWebSocketUrl);
             Play.Connect("0.0.1");
@@ -33,6 +30,11 @@ namespace TheMessage
         public override void OnAuthenticated()
         {
             Play.Log("OnAuthenticated");
+        }
+
+        public void ShowRoomModes()
+        {
+            
         }
     }
 }
